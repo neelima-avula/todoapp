@@ -51,37 +51,37 @@ a:hover {text-decoration:none;}
 /*Fonts-03-July-2017*/
 @font-face {
     font-family: robotocondensed-regular;
-    src: url(../fonts/robotocondensed-regular.ttf);
+    src: url(../fonts/Robotocondensed-Regular.ttf);
 }
 
 @font-face {
     font-family: robotocondensed-light;
-    src: url(../fonts/robotocondensed-light.ttf);
+    src: url(../fonts/Robotocondensed-Light.ttf);
 }
 
 @font-face {
     font-family: robotocondensed-bold;
-    src: url(../fonts/robotocondensed-bold.ttf);
+    src: url(../fonts/Robotocondensed-Bold.ttf);
 }
 
 @font-face {
     font-family: roboto-bold;
-    src: url(../fonts/roboto-Bold.ttf);
+    src: url(../fonts/Roboto-Bold.ttf);
 }
 
 @font-face {
     font-family: roboto-light;
-    src: url(../fonts/roboto-Light.ttf);
+    src: url(../fonts/Roboto-Light.ttf);
 }
 
 @font-face {
     font-family: roboto-thin;
-    src: url(../fonts/roboto-Thin.ttf);
+    src: url(../fonts/Roboto-Thin.ttf);
 }
 
 @font-face {
     font-family: roboto-regular;
-    src: url(../fonts/roboto-Regular.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 
 
@@ -106,5 +106,5 @@ body{background: #ffffff; min-width:320px;}
 
 
 
-/*body{background:#000000;}*/
+
  
