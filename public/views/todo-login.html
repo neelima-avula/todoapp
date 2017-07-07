@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <title>Todo</title>
+    <link href="./css/bootstrap.min.css" rel = "stylesheet"/>
+    <link href="./css/bootstrap-theme.min.css" rel = "stylesheet"/>
+    <link href="./css/styles.css" rel = "stylesheet"/>
+    <link href="./css/responsive.css" rel = "stylesheet"/>
+</head>
+<body>
+
+     <!--Header-->
+    <div class='td-header'>
+        <a href='#' class='td-logo'>
+            <img src='./images/td-logo.png'/>
+        </a>
+    </div>
+
+    <div class='td-wrapper'>
+        
+     <!--content-->
+    <div class='td-content'>
+        <span class='td-content-title'>Login TODO</span>
+        <img src='./images/td-logo-dark.png'/>
+
+         <div class='td-register-wrapper'>
+            <form action='/dashboard' method='post'>
+            <div class='form-group margin-top-10'>                
+                <input id='txtLoginEmail' name='loginEmail' type='email' class='form-control' placeholder='Email' required='required' autofocus/>
+            </div>
+              <div class='form-group margin-top-10'>                
+                <input id='txtLoginPassword' name='loginPassword' type='password' class='form-control' placeholder='Password' required='required' autofocus/>
+            </div>
+            <div class='form-group margin-top-15'>
+                <button id='btnLoginSubmit' name='loginSubmit' type='submit' class='btn btn-primary td-form-button'>Login</button>
+            </div> 
+            </form>
+             <p class="form-group-footer">New to Todo? <a href='/register'>Create an Account.</a></p>
+            </div>
+
+        </div>
+   </div>
+
+      <!--footer-->
+    <div class='td-footer fixed'>
+    
+    </div>
+ 
+
+
+<script src='./js/jquery_1_11_1.min.js'></script>
+<script src='./js/bootstrap.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
+<script src='./js/script.js'></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<title>Todo</title>
+    <link href="./css/bootstrap.min.css" rel = "stylesheet"/>
+    <link href="./css/bootstrap-theme.min.css" rel = "stylesheet"/>
+    <link href="./css/styles.css" rel = "stylesheet"/>
+    <link href="./css/responsive.css" rel = "stylesheet"/>
+</head>
+<body ng-app="myApp">
+     <!--Header-->
+    <div class='td-header'>
+        <a href='#' class='td-logo'>
+            <img src='./images/td-logo.png'/>
+        </a>
+    </div>
+    <div class='td-wrapper'>
+    
+
+     <!--content-->
+    <div class='td-content'>
+        <span class='td-content-title'>Signup TODO</span>
+        <img src='./images/td-logo-dark.png'/>
+
+
+        <div class='td-register-wrapper' ng-controller="registerController">
+            <form action='/' method='post' ng-submit="registerSubmit()">
+           
+             <div class='form-group margin-top-10' >
+                <label for='txtRegisterName'>Name</label>
+                <input id='txtRegisterName' name='registerName' type='text' class='form-control' required='required' autofocus/>
+            </div>
+
+             <div class='form-group'>
+                <label for='txtRegisterEmail'>Email</label>
+                <input id='txtRegisterEmail' name='registerEmail' type='email' class='form-control' required='required'/>
+            </div>
+
+             <div class='form-group' >
+                <label for='txtRegisterPassword'>Password</label>
+                <input id='txtRegisterPassword' name='registerPassword' type='password' class='form-control' required='required'/>
+            </div>
+            <div class='form-group' >
+                <label for='txtRegisterRetypePassword'>Re-type Password</label>
+                <input id='txtRegisterRetypePassword' name='registerRetypePassword' type='password' class='form-control' required='required'/>
+            </div>
+            <div class='form-group margin-top-15'>
+                <button id='btnRegisterSubmit' name='registerSubmit' type='submit' class='btn btn-primary td-form-button'>Register</button>
+                </div> 
+                
+                </form>
+                <p class="form-group-footer">Already member? <a href='/'>Login.</a></p>
+        </div>
+    </div>
+
+     <!--footer-->
+    <div class='td-footer fixed'>
+    
+    </div>
+
+    </div>
+   
+    
+  
+
+
+<script src='./js/jquery_1_11_1.min.js'></script>
+<script src='./js/bootstrap.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
+<script src='./js/script.js'></script>
+</body>
+</html>
