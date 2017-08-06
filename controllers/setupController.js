@@ -1,2 +1,4 @@
-var usermodel = require('../models/user-model.js');
+module.exports = {
+    currentUserID : ''
+}
 

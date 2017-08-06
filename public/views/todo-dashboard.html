@@ -1,4 +1,4 @@
-<html>
+<html ng-app="myApp">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,20 +9,39 @@
     <link href="./css/styles.css" rel = "stylesheet"/>
     <link href="./css/responsive.css" rel = "stylesheet"/>
 </head>
-<body>
+<body class="td-db-body" ng-controller="dashboardController">
 
      <!--Header-->
     <div class='td-header'>
-        <a href='#' class='td-logo'>
+        <a href='/' class='td-logo'>
             <img src='./images/td-logo.png'/>
         </a>
     </div>
 
-    <div class='td-wrapper'>
-        
-     <!--content-->
    
-   </div>
+     <!--content-->
+
+     <div class="td-db-content">
+        <div class="input-group td-db-maininput" >
+             <input type="text" name="addtask" ng-model="addtask" class="form-control" placeholder="Enter your task todo">
+             <span class="input-group-btn">
+             <button class="btn btn-default" type="button" ng-click="addTodoList()">+</button>
+             </span>
+        </div> 
+     <div>
+        <a href="#" class="td-db-moreoptions">more options</a>
+        </div>
+
+    <div class="td-db-tasklist">
+                 <div ng-repeat="x in tasks" ng-cloak>
+                     <input type="text" class="td-db-tasklistitem" value=" {{x.task}}" list></input>
+                 </br>
+                </br></div>  
+                
+    </div>
+            
+     </div>
+   
 
       <!--footer-->
     <div class='td-footer fixed'>
